@@ -1,0 +1,239 @@
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .brand a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    background-color: #575757;
+}
+
+.header-content {
+    background-image: url('./Images/1.jpg');
+    background-size:cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 30px;
+}
+
+.header-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.header-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0078e7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.header-content .btn:hover {
+    background-color: #005bb5;
+}
+
+.section {
+    background-color: #fff;
+    padding: 60px 20px;
+    margin-top: -60px;
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2337be;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.skills-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.skills-list li {
+    background-color: #0078e7;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.project {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.project h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    margin-bottom: 20px;
+}
+
+.project .project-link {
+    color: #0078e7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project .project-link:hover {
+    text-decoration: underline;
+    color: #005bb5;
+    }
+    
+    .project-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .btn {
+    display:inline-block;
+    padding: 10px 20px;
+    background-color: #0078e7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    }
+    
+    .resume-btn-container {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .resume-btn {
+        display: inline-block;
+    }
+    
+    
+    footer {
+    text-align: center;
+    padding: 20px 0;
+    }
+    
+    .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .footer-content p {
+    margin: 0;
+    }
+    
+    @media screen and (max-width: 768px) {
+    .navbar .container {
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    
+    css
+    Copy code
+    .navbar .brand {
+        margin-bottom: 10px;
+    }
+    
+    .navbar .nav-links {
+        margin-top: 20px;
+    }
+    
+    .header-content {
+        padding: 80px 20px;
+    }
+    
+    .about-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .profile-pic {
+        margin: 0 auto;
+    }
+    
+    .skills-list {
+        justify-content: flex-start;
+    }
+    }
